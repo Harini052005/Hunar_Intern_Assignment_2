@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dumble Fitness Club</title>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Baloo Bhai 2", cursive;
+    background: url(https://i.postimg.cc/KzPQXFm4/Boxing-girl.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+    color: white;
+  }
+
+  .left {
+    display: inline-block;
+    /*   */
+    left: 60px;
+    top: 28px;
+    position: absolute;
+  }
+  .left img {
+    width: 96px;
+    filter: invert(100%);
+  }
+  .left div {
+    line-height: 5px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .right {
+    display: inline-block;
+    /* border: 2px solid rgb(14, 223, 101); */
+    position: absolute;
+    right: 36px;
+    top: 37px;
+  }
+  .mid {
+    display: block;
+    width: 44%;
+    margin: 37px auto;
+    /* border: 2px solid rgb(20, 72, 185); */
+  }
+  .navbar {
+    display: inline-block;
+  }
+  .navbar li {
+    display: inline-block;
+    font-size: 21px;
+  }
+  .navbar li a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 13px 13px;
+  }
+  .navbar li a:hover,
+  .navbar li a.active {
+    text-decoration: underline;
+    color: gray;
+  }
+  .btn {
+    font-family: "Baloo Bhai 2", cursive;
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 3px 4px;
+    border: 2px solid rgb(241, 241, 241);
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background: rgb(73, 73, 73);
+  }
+  .cont {
+    border: 2px solid white;
+    margin: 112px 133px;
+    padding: 35px;
+    border-radius: 20px;
+    width: 39%;
+  }
+  .formgroup input {
+    font-family: "Baloo Bhai 2", cursive;
+    margin: 10px auto;
+    text-align: center;
+    display: block;  
+    width: 360px;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 19px;
+  }
+  .cont h1 {
+    text-align: center;
+    width: 511px;
+  }
+  .cont button {
+    display: block;
+    width: 69%;
+    margin: 10px auto;
+    padding: 5px;
+  }
+  </style>
+</head>
+<body>
+  <header class="head">
+    <!-- left box for logo -->
+    <div class="left">
+      <img src="https://i.postimg.cc/QdR1bPct/logo2.png" alt="Dumble Fitness Club" />
+      <div>Fitness Club</div>
+    </div>
+    <!-- mid box for navigation -->
+    <div class="mid">
+      <ul class="navbar">
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Fitness Calculator</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <!-- right box for button -->
+    <div class="right">
+      <button class="btn">Call Us Now</button>
+      <button class="btn">Email Us</button>
+    </div>
+  </header>
+  <div class="cont">
+    <h1>Join the best GYM of Vasai now!</h1>
+    <form action="#noaction.php">
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter Name" />
+      </div>
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter Age" />
+      </div>
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter Gender" />
+      </div>
+      <div class="formgroup">
+        <input type="text" name="" placeholder="Enter Your Locality" />
+      </div>
+      <button class="btn submit">Submit</button>
+    </form>
+  </div>
+
+<style>
+  @media (max-width: 1024px) {
+  .navbar li {
+    font-size: 21px;
+    margin: 0 20px;
+  }
+  .left div {
+     line-height: 18px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .left img {
+    width: 50px;
+  }
+  .right {
+    right: 14px;  
+    top: 20px;
+  }
+  .btn {
+    padding: 5px 8px;
+    font-size: 15px;
+  }
+  .cont {
+    width: 400px; 
+  }
+  .cont h1{
+     width: 400px;
+  }
+  .formgroup input{
+    width: 300px;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 15px;
+  }
+}
+ @media (max-width: 920px) {
+  .navbar li {
+    font-size: 20px;
+    margin: 0 20px;
+  }
+  .left div {
+     line-height: 18px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .left img {
+    width: 50px;
+  }
+  .right {
+    right: 14px;  
+    top: 20px;
+  }
+  .btn {
+    padding: 5px 8px;
+    font-size: 15px;
+  }
+  .cont {
+    width: 400px; 
+  }
+  .cont h1{
+     width: 400px;
+  }
+  .formgroup input{
+    width: 300px;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 15px;
+  }
+}
+  @media (max-width: 730px) {
+  .navbar li {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .left div {
+     line-height: 18px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .left img {
+    width: 50px;
+  }
+  .right {
+    right: 12px;  
+    top: 15px;
+  }
+  .btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .cont {
+    width: 350px;
+  }
+  .cont h1{
+     width: 330px;
+  }
+  .formgroup input{
+    width: 280px;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 658px) {
+  .navbar li {
+    font-size: 15px;
+    margin: 0 7px;
+  }
+  .left div {
+    line-height: 14px;
+    font-size: 15px;
+    text-align: center;
+  }
+  .left img {
+    width: 50px;
+  }
+  .right {
+    right: 5px;  
+    top: 10px;
+  }
+  .btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .cont {
+    width: 280px;
+    margin: 109px 100px;
+    padding: 20px;
+  }
+  .cont h1{
+     width: 250px;
+  }
+  .formgroup input{
+    width: 180px;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 527px) {
+  .navbar li {
+    font-size: 15px;
+    margin: 0 9px;
+  }
+  .left div {
+    line-height: 29px;
+    font-size: 10px;
+    text-align: center;
+  }
+  .left img {
+    width: 29px;
+  }
+  .right {
+    right: 1px;  
+    top: 10px;
+  }
+  .btn {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  .cont {
+    width: 350px;
+    margin: 103px 8px;
+    padding: 20px;
+  }
+  .cont h1{
+     width: 330px;
+  }
+  .formgroup input{
+    width: 200px;
+    border-radius: 10px;
+    padding: 0px;
+    font-size: 15px;
+  }
+}
+</style>
+</body>
+</html>
